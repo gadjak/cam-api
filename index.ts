@@ -59,3 +59,5 @@ app.listen(PORT, () => {
 });
 
 module.exports = app;
+
+//   "start": "tsc -p . && node dist/index.js",
