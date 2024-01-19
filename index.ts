@@ -10,6 +10,10 @@ app.use(express.json());
 app.use(cors());
 const PORT = process.env.PORT || 8000;
 
+app.get("/", (req, res) => {
+  return res.send("Hello World!");
+})
+
 app.get("/api/camera/:ip/:user/:password", async (req, res) => {
   try {
     const client = new DigestClient(req.params.user, req.params.password, { algorithm: "MD5" });
