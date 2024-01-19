@@ -57,3 +57,5 @@ app.put("/api/camera/:ip/reboot/:user/:password", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}`);
 });
+
+module.exports = app;
